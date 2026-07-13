@@ -36,6 +36,9 @@ html {
 section[id] {
 	scroll-margin-top: 90px;
 }
+#inicio {
+    scroll-margin-top: 0;
+}
 
 body {
 	font-family: 'Inter', sans-serif;
