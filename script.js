@@ -23,7 +23,12 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 		const target = document.querySelector(link.getAttribute("href"));
 		if (!target) return;
 		e.preventDefault();
-
+if (target.id === "inicio") {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+} else {
 		const targetRect = target.getBoundingClientRect();
 		const targetCenter = targetRect.top + targetRect.height / 2;
 		const viewportCenter = window.innerHeight / 2;
